@@ -31,7 +31,6 @@ header {
   background-color: #047aed;
   padding: 0 11%;
   color: white;
-  border-bottom: 1px solid white;
 }
 
 .navbar {
@@ -279,12 +278,17 @@ aside {
   width: fit-content;
   border-radius: 10px;
   padding: 20px;
+  transition: 0.3s;
 }
 
 .language p {
   font-size: 23px;
   font-weight: 900;
   margin-bottom: 15px;
+}
+
+.language:hover {
+  transform: scale(1) translateY(-20px);
 }
 
 footer {
