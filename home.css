@@ -57,14 +57,31 @@ header {
 .navbar ul li a {
   color: white;
 }
+header{
+  position: relative;
+}
 
 .content {
   padding: 50px 0;
   display: flex;
   justify-content: space-between;
   position: relative;
+  
 }
-
+header::before,
+header::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
 .cta {
   width: 50%;
   height: fit-content;
@@ -104,6 +121,7 @@ figcaption a:hover {
   position: absolute;
   box-shadow: 0 0 5px #333;
   right: 60px;
+  z-index: 10;
 }
 
 h2 {
@@ -340,6 +358,7 @@ footer ul li a {
     position: relative;
     width: 100%;
     right: 0;
+    z-index: 10 !important;
   }
 
   section {
