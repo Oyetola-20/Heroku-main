@@ -188,7 +188,7 @@ main h3 {
 
 .platform {
   position: relative;
-  animation: mateco 1s linear 0s 1 normal forwards;
+  animation: mateco 2s linear 0s 1 normal forwards;
 }
 
 @keyframes mateco {
